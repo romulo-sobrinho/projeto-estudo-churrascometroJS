@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churrascometro</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <script>
+      
+      function calcular() {
+        let inputAadultos = document.getElementById("adultos");
+        let inputCriancas = document.getElementById("criancas");
+        let inputDuracao = document.getElementById("duracao");
+
+        console.log(inputAadultos, inputCriancas, inputDuracao);
+
+      }
+
+      function limpar() {
+
+      }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>CHURRASCOMETRO</h1>
+    <input id="adultos" type="number" placeholder="Quantidade de adultos" />
+    <input id="criancas" type="number" placeholder="Quantidade de crianças" />
+    <input id="duracao" type="number" placeholder="Duração da festa em horas" />
+    <button onclick="calcular()">Calcular</button> <button onclick="limpar()">Limpar</button>
+
+    <div class="containerResultado">
+      <h2>Resultado</h2>
+      <p id="resultadoCarne">Resultado Carne</p>
+      <p id="resultadoCerveja">Resultado Cerveja</p>
+      <p id="resultadoRefri">Resultado Refri</p>
+    </div>
+  </div>
+</body>
+</html>
